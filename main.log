@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.12.1)  4 DEC 2019 16:01
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.12.1)  25 JAN 2020 15:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -453,7 +453,7 @@ No file sections/intro.tex.
 
  (./sections/1.tex [1
 
-]) [2] (./main.aux (./sections/intro.aux) (./sections/1.aux)) ) 
+] [2] [3]) [4] [5] (./main.aux (./sections/intro.aux) (./sections/1.aux)) ) 
 Here is how much of TeX's memory you used:
  13485 strings out of 492922
  249398 string characters out of 6136751
@@ -461,6 +461,6 @@ Here is how much of TeX's memory you used:
  17427 multiletter control sequences out of 15000+600000
  536660 words of font info for 51 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 37i,6n,39p,351b,446s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,7n,39p,351b,446s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (4 pages).
+Output written on main.pdf (7 pages).

@@ -58,3 +58,150 @@ The theory of turbulent boundary layers is an application of this method.
 
 \textbf{Local invariance}
 
+The characteristics of the turbulent motion at some point in time and space appear to be controlled mainly by the immediate environment (local).
+
+As long as time scales are small enough, and the environment is changing gradually, we can assume that the turbulence is dynamically similar everywhere \textbf{if nondimensionalized with local length and time scales}.
+
+\subsection{The origin of turbulence}
+
+Laminar flow will turn into turbulence from instabilities (large Reynolds numbers).
+
+Turbulence requires its environment to obtain energy so that it could maintain itself (due to dissipation). The source of energy could be shear in mean flow, or buoyancy.
+If there is no source of energy, the turbulence decays, and it again turns back into laminar flow.
+
+If we wish to maintain a laminar flow, or make a turbulent flow laminar, we shall seek for a mechanism that consumes turbulent kinetic energy.
+
+\subsection{Diffusivity of turbulence}
+
+Turbulent motion has an ability to transport or mix \textbf{momentum, kinetic energy}, and contaminants such as \textbf{heat, particles and moisture.}
+
+\textbf{Diffusion in a problem with an imposed length scale}
+
+Suppose a room with characteristic linear dimension $L$ where a heating element is installed.
+
+$\theta$ is the temperature; $\gamma$ is the thermal diffusivity (constant).
+
+If there is no air motion, heat has to be distributed by molecular diffusion.
+
+\begin{equation*}
+    \frac{\partial \theta}{\partial t}=\gamma\frac{\partial^2\theta}{\partial x_i \partial x_i}
+\end{equation*}
+
+Dimensionaly interpret it,
+
+\begin{equation*}
+    \frac{\Delta \theta}{T_m}\sim\gamma\frac{\Delta\theta}{L^2}
+\end{equation*}
+
+Thus,
+
+\begin{equation*}
+    T_m\sim\frac{L^2}{\gamma}
+\end{equation*}
+
+Let $L=5\ m$, $\gamma=0.20\ cm^2/sec$, we have $T_m\sim 10^6\ sec$, which is rather ineffective.
+
+However, if there is motions, which is represented by characteristic velocity $u$, we shall have
+
+\begin{equation*}
+    T_t\sim\frac{L}{u}
+\end{equation*}
+
+To determine $T_t$, we need to find $u$. Suppose the difference in temperature is $\Delta\theta$, the buoyant acceleration could be $g\Delta\theta/\theta$, and if the height $h=0.1\ m$, we have $u^2\sim gh\Delta \theta/\theta~0.03 (m/sec)^2$, which means that $u\sim 17\ cm/sec$.
+
+If we assume $u=5\ cm/s$ as an average throught the room and $L=5\ m$, $T_t\sim 100\ sec$.
+
+Compared to molecular diffusion, diffusion by random motion is much more rapid,
+
+\begin{equation*}
+    \frac{T_t}{T_m}\sim\frac{L}{u}\frac{\gamma}{L^2}=\frac{\gamma}{uL}
+\end{equation*}
+
+Which is the inverse of \textbf{P\'eclet number.}
+
+As we know, Prandtl number $Pr=\nu/\gamma$, and for gases, Prandtl number is close to $1$, we can substitute $\nu$ to $\gamma$,
+
+\begin{equation*}
+    \frac{T_t}{T_m}\sim\frac{\nu}{uL}=\frac{1}{Re}
+\end{equation*}
+
+In the example above, the Reynolds number $Re$ is about $15000$.
+
+\textbf{Eddy diffusivity}
+
+Due to the complication of turbulent flow, we can use a method effective diffusivity.
+
+If we write for the diffusion of heat by turbulent motions,
+
+\begin{equation*}
+    \frac{\partial\theta}{\partial t}=K\frac{\partial^2\theta}{\partial x_i\partial x_i}
+\end{equation*}
+
+where $K$ is the \textbf{representative diffusivity (or eddy diffusivity, exchange coefficient for heat)}.
+
+From the equation above, we can estimate a time scale,
+
+\begin{equation*}
+    T\sim\frac{L^2}{K}
+\end{equation*}
+
+Since we have the atcual time scale $T_t$ before, equating these two time scales, we have
+
+\begin{equation*}
+    K\sim uL
+\end{equation*}
+
+And finally arrive at
+
+\begin{equation*}
+    \frac{K}{\gamma}\sim\frac{K}{\nu}\sim\frac{uL}{\nu}=Re
+\end{equation*}
+
+This indicates that Reynolds number can also be interpreted as a ratio of turbulent viscosity to molecular viscosity.
+
+N.B. eddy diffusivity $K$ is an artifice, which might not actually exist.
+
+\textbf{Diffusion in a problem with an imposed time scale}
+
+An example of diffusivity of turbulence, the boundary layer of the atmosphere, ommited here.
+
+\subsection{Length scales in turbulent flows}
+
+In turbulent flows, a wide range of length scales exists. That is why spectral analysis of turbulent motion is useful.
+
+\textbf{Laminar boundary layers}
+
+For steady flow of an incompressible fluid with constant viscosity, the Navier-Stokes equations are
+
+\begin{equation*}
+    u_j\frac{\partial u_i}{\partial x_j}=-\frac{1}{\rho}\frac{\partial p}{\partial x_i}+\nu\frac{\partial^2 u_i}{\partial x_j\partial x_j}
+\end{equation*}
+
+If we have $U$ as the charateristic velocity and $L$ as the charateristic length, we can estimate the inertia term as $U^2/L$, and the viscous terms are $\nu U/L^2$.
+The ratio of inertia terms and viscous terms is $UL/\nu=Re$, which means that viscous terms should be negligible at large Reynolds numbers.
+However, since boundary conditions and initial conditions exist, we shall not neglect viscous terms everywhere in the flow field.
+
+As viscous terms can survive at high Reynolds numbers, we shall choose a new length scale $l$, so that the viscous terms are of the same order of magnitude as the inertia terms.
+
+\begin{equation*}
+    U^2/L\sim\nu U/l^2
+\end{equation*}
+
+thus
+
+\begin{equation*}
+    \frac{l}{L}\sim\left(\frac{\nu}{UL}\right)^{1/2}=Re^{-1/2}
+\end{equation*}
+
+Hence, we know that the viscous length $l$ is a transverse length scale, which represents the width or thickness of the boundary layer.
+
+\textbf{Diffusive and convective length scales}
+
+Diffusive length scale: across the flow;
+
+Convective length scale: along the flow.
+
+In most shear flows, their width is much smaller than their length. This is useful to some simplifying approximations. $l/L\rightarrow 0$ is a good example.
+
+
+
