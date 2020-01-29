@@ -1,26 +1,7 @@
-\documentclass{article}
-%\usepackage{geometry}
-%\geometry{a4paper,scale=0.8}
-\usepackage{pdfpages}
-\usepackage{amsmath}
-\usepackage{esint}
-\usepackage[version=4]{mhchem}
-\usepackage{graphicx}
-\usepackage{xcolor}
-\usepackage{longtable}
-\usepackage{booktabs}
-\usepackage[scr]{rsfso}
-\usepackage{subfigure}
-\newcommand{\Laplace}{\mathscr{L}}
-\newcommand{\Fourier}{\mathscr{F}}
-\usepackage{indentfirst}
-\setlength{\parindent}{0pt}
+\documentclass[a4paper,12pt]{article}
+\usepackage{My_note}
 
-\renewcommand {\thetable} {\thesection{}.\arabic{table}}
-\renewcommand {\thefigure} {\thesection{}.\arabic{figure}}
-
-\def\ooint{{\bigcirc}\kern-11.5pt{\int}\kern-6.5pt{\int}}
-\def\oooint{{\bigcirc}\kern-12.3pt{\int}\kern-7pt{\int}\kern-7pt{\int}}
+\def\allfiles{}         %全文编译
 
 \title{Note - A First Course in Turbulence}
 \author{Wang Yizhen}
@@ -30,16 +11,13 @@
 
 \maketitle
 \thispagestyle{empty}
-\newpage
-\thispagestyle{empty}
-\include{sections/intro}
 \tableofcontents
 \thispagestyle{empty}
 \newpage
 
 \setcounter{page}{1}
 
-\include{sections/1}
+\include{1}
 
 
 

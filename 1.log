@@ -1,15 +1,15 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.12.1)  30 JAN 2020 00:06
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.12.1)  30 JAN 2020 00:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**main
-(./main.tex
+**1
+(./1.tex
 LaTeX2e <2018-12-01>
 (c:/texlive/2019/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
-(c:/texlive/2019/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+(c:/texlive/2019/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 )
 \c@part=\count80
 \c@section=\count81
@@ -370,48 +370,42 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfig@bottom=\skip74
 ) (c:/texlive/2019/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
-)) (./main.aux (./1.aux))
-\openout1 = `main.aux'.
+))
+No file 1.aux.
+\openout1 = `1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
 
-Package chemgreek Info: Activating mapping `default' on line 10.
+Package chemgreek Info: Activating mapping `default' on line 4.
 
-LaTeX Font Info:    Try loading font information for U+esint on input line 12.
- (c:/texlive/2019/texmf-dist/tex/latex/esint/uesint.fd
-File: uesint.fd 
-) (./main.toc)
-\tf@toc=\write3
-\openout3 = `main.toc'.
-
- [1
+[1
 
 ]
-\openout2 = `1.aux'.
-
- (./1.tex [1
-
-] [2] [3] [4]) [5] (./main.aux (./1.aux)) ) 
+LaTeX Font Info:    Try loading font information for U+esint on input line 91.
+ (c:/texlive/2019/texmf-dist/tex/latex/esint/uesint.fd
+File: uesint.fd 
+) [2] [3] [4] [5] (./1.aux) )
+(\end occurred when \ifx on line 218 was incomplete) 
 Here is how much of TeX's memory you used:
- 12152 strings out of 492922
- 229789 string characters out of 6136751
- 279236 words of memory out of 5000000
- 16141 multiletter control sequences out of 15000+600000
- 537570 words of font info for 54 fonts, out of 8000000 for 9000
+ 12109 strings out of 492922
+ 229339 string characters out of 6136751
+ 279777 words of memory out of 5000000
+ 16119 multiletter control sequences out of 15000+600000
+ 533041 words of font info for 35 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 41i,6n,39p,370b,446s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,5n,39p,383b,446s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (6 pages).
+Output written on 1.pdf (5 pages).

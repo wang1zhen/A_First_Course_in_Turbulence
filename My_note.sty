@@ -1,0 +1,25 @@
+% My_note.sty
+\ProvidesPackage{My_note}[2020/1/29 v1.0]
+
+\RequirePackage{amsmath}            %数学公式包
+\newcommand*{\dif}{\mathop{}\!\mathrm{d}}   %微分d
+
+\RequirePackage{esint}              %带圈的积分 \varoiint \iiint
+\RequirePackage[version=4]{mhchem}  %化学符号
+\RequirePackage{graphicx}           %插图
+\RequirePackage{float}              %浮动包 支持!H
+\RequirePackage{longtable}          %长表格
+\RequirePackage{booktabs}           %表格toprule midrule bottomrule
+
+\RequirePackage[scr]{rsfso}
+\newcommand{\Laplace}{\mathscr{L}}
+\newcommand{\Fourier}{\mathscr{F}}  %拉氏变换 傅氏变换
+
+\RequirePackage{subfigure}          %子图设置
+\RequirePackage{indentfirst}        %缩进设置
+\setlength{\parindent}{0pt}
+
+\renewcommand {\thetable} {\thesection{}.\arabic{table}}            %表格按section编号
+\renewcommand {\thefigure} {\thesection{}.\arabic{figure}}          %图片按section编号
+
+

@@ -1,3 +1,14 @@
+\ifx\allfiles\undefined             %独立编译
+\documentclass{article}
+\usepackage{My_note}
+\begin{document}
+\title{}
+\author{}
+\date{}
+%\else
+%\chapter{}
+\fi
+
 \section{Introduction}
 
 Most flows in reality are turbulent.
@@ -204,4 +215,6 @@ Convective length scale: along the flow.
 In most shear flows, their width is much smaller than their length. This is useful to some simplifying approximations. $l/L\rightarrow 0$ is a good example.
 
 
-
+\ifx\allfiles\undefined         %独立编译
+\end{document}
+\fi
