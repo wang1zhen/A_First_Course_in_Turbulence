@@ -214,6 +214,136 @@ Convective length scale: along the flow.
 
 In most shear flows, their width is much smaller than their length. This is useful to some simplifying approximations. $l/L\rightarrow 0$ is a good example.
 
+\textbf{Turbulent boundary layers}
+
+We can compare turbulent shear flows to laminar flows in a rudimentary way.
+
+Characteristic velocity fluctuations: $u$
+
+Boundary-layer thickness: $l$
+
+We have $dl/dt\sim u$. And
+
+Time interval: $L/U$
+
+thus $l\sim ut \sim uL/U$.
+
+In effect, we equate turbulent ``diffusion'' time scale $l/u$ to the convective time scale $L/U$. As a result, we can write the scale relations as
+
+\begin{gather*}
+    l/L\sim u/U\\
+    l/u\sim L/U
+\end{gather*}
+
+These relations lead to an assumption that the time scale of the external flow must be commensurate with the time scale of the flow. However, this assumption conflicts with eddy-viscosity concepts.
+
+\textbf{Laminar and turbulent friction}
+
+Experimental data suggest that $u/U$ is of the order of $10^{-2}$ over a wide range of Reynolds numbers, we could know that the growth of turbulent shear flows is relatively rapid.
+
+For laminar boundary layer in two-dimensional flow, drag ($D$)
+
+\begin{equation*}
+    D\sim\rho U^2 l
+\end{equation*}
+
+Thus the drag coefficient $C_d$ is defined by 
+
+\begin{equation*}
+    C_d=\frac{D}{\frac12\rho U^2L}
+\end{equation*}
+
+Hence,
+
+\begin{equation*}
+    C_d\sim\frac{2l}{L}=2Re^{-1/2}
+\end{equation*}
+
+For a turbulent boundary layer, the mass flow deficit at the end of the plate is proportional to $\rho ul$, so that the rate of loss of momentum is proportional to $(\rho ul)U$. Thus,
+
+\begin{equation*}
+    D\sim\rho uUl
+\end{equation*}
+
+Then the drag coefficient becomes
+
+\begin{equation*}
+    C_d\sim 2\frac{u}{U}\frac{l}{L}\sim2\left(\frac{u}{U}\right)^2
+\end{equation*}
+
+Which shows that the drag coefficient of a turbulent boundary layer should be much greater than the drag coefficient of a laminar boundary layer.
+
+\textbf{Small scales in turbulence}
+
+So far, we have only considered the largest eddy sizes in turbulent flows, since they do most of the transport of momentum and contaminants, and we also assumed that the large eddies are as big as the width of the flow, which is the relevant length scale in the analysis.
+
+However, we shall attempt to find the smallest length scales in turbulent flows. At very small length scales, viscosity canbe effective in smoothing out velocity fluctuations.
+
+Parameters governing small-scale motion: $\epsilon$ the dissipation rate per unit mass, $\nu$ kinematic viscosity. With these parameters, we can form length, time and velocity scales:
+
+\begin{align*}
+    \eta=(\nu^3/\epsilon)^{1/4} &   \tau=(\nu/\epsilon)^{1/2}   &   v=(\nu\epsilon)^{1/4}
+\end{align*}
+
+Which are referred to as Kolmogorov microscales of length, time and velocity, a.k.a ``inner'' scales.
+
+\textbf{An inviscid estimate for the dissipation rate}
+
+Assumption: the rate at which large eddies supply energy to small eddies \textbf{is proportional to} the reciprocal of the time scale of the large eddies.
+
+For per unit mass,  the amount of kinetic energy is proportional to $u^2$; the rate of transfer of energy is proportional to $u/l$, where $l$ represents the size of the largest eddies or the width of the flow, ``integral scale'', or ``outer scale''.
+
+The rate of energy supply to the small-scale eddies is of order $u^2\cdot u/l$. The dissipation rate $\epsilon$,
+
+\begin{equation*}
+    \epsilon\sim u^3/l
+\end{equation*}
+
+From the equation above, we know that viscous dissipation of energy can be estimated from the large-scale dynamics, and viscosity is not involved.
+
+It also indicates that large eddies lose a significant fraction of their kinetic energy $1/2u^2$ within one ``turnover'' time $l/u$.
+
+\textbf{Scale relations}
+
+\begin{align*}
+    \eta/l&\sim(ul/\nu)^{-3/4}=Re^{-3/4}\\
+    \tau u/l&\sim\tau/t=(ul/\nu)^{-1/2}=Re^{-1/2}\\
+    \nu/u&\sim(ul/\nu)^{-1/4}=Re^{-1/4}
+\end{align*}
+
+These relations show that the length, time, and velocity scales of the smallest eddies are very much smaller than those of the largest eddies.
+
+Vorticity has the dimensions of $sec^{-1}$, which is reciprocal of $\tau$. Thus, we know hat vorticity of the small-scale eddies is very much larger than that of the large-scale motion.
+
+\textbf{Molecular and turbulent scales}
+
+Kolmogorov length and time scales are the smallest scales in the turbulent motion, and thus we can say that most turbulent flows are continuum phenomena.
+
+If the dissipation rate $\epsilon$ is high, then the Kolmogorov scales would decrease, and this is usually associated with large values of $u$.
+
+The relevant molecular length scale is the mean free path $\xi$, and the velocity scale of molecular motion in a gas is proportional to the speed of sound $a$ in the gas.
+
+Kinetic theory of gases shows,
+
+\begin{equation*}
+    \nu\sim a\xi
+\end{equation*}
+
+The ratio of $\xi$ to $\eta$ is called microstructure Knudsen number,
+
+\begin{equation*}
+    \xi/\eta\sim Ma/R^{1/4}
+\end{equation*}
+
+With a high Mach number and a low Reynolds number, turbulence might interfere with molecular motion, but this situation is not likely to occur.
+
+The ratio of the time scale $\tau$ to the collision time scale $\xi/a$ of molecular motion is
+
+\begin{equation*}
+    \tau a/\xi\sim Re^{1/2}Ma^{-2}
+\end{equation*}
+
+The smallest time scales in turbulent motion tend to be much larger than molecular time scales, we can assume that the motion of the gas molecules is in statistical equilibrium.
 
 \ifx\allfiles\undefined         %独立编译
 \end{document}
