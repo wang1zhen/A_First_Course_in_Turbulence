@@ -11,18 +11,290 @@
 
 \section{Turbulent transport of momentum and heat}
 
+Turbulent velocity fluctuations can generate large momentum fluxes between different parts of a flow.
+A momentum flux can be thought of as a stress, turbulent momentum fluxes are commonly called Reynolds stresses.
 
+\subsection{The Reynolds equations}
 
+The equations of motion of an incompressible fluid are
 
+\begin{align*}
+     & \frac{\partial\tilde u_i}{\partial t}+\tilde u_j\frac{\partial\tilde u_i}{\partial x_j}=\frac{1}{\rho}\frac{\partial}{\partial x_j}\tilde\sigma_{ij} \\
+     & \frac{\partial\tilde u_i}{\partial x_i}=0
+\end{align*}
 
+$\tilde\sigma_{ij}$: the sress tensor.
 
+Repeated indices: summation over all three values of the index.
 
+Tilde ($\ \tilde{}\ $): instantaneous value at $(x_i,t)$ of a variable without Reynolds decomposition.
 
+For Newtonian fluid,
 
+\begin{equation*}
+    \tilde\sigma_{ij}=-\tilde p\delta_{ij}+2\mu\tilde s_{ij}
+\end{equation*}
 
+$\tilde p$: hydrodynamic pressure.
 
+$\mu$: dynamic viscosity (constant).
 
+$\tilde s_{ij}$: rate of strain,
 
+\begin{equation*}
+    \tilde s_{ij}=\frac{1}{2}\left(\frac{\partial\tilde u_i}{\partial x_j}+\frac{\partial\tilde u_j}{\partial x_i}\right)
+\end{equation*}
+
+Sub into former N-S equation,
+
+\begin{equation*}
+    \frac{\partial\tilde u_i}{\partial t}+\tilde u_j\frac{\partial\tilde u_i}{\partial x_j}=-\frac{1}{\rho}\frac{\partial\tilde p}{\partial x_i}+\nu\frac{\partial^2\tilde u_i}{\partial x_j\partial x_j}
+\end{equation*}
+
+\textbf{The Reynolds decomposition}
+
+For a steady flow,
+
+\begin{equation*}
+    \frac{\partial U_i}{\partial t}=0
+\end{equation*}
+
+We can have a time average of the flow. We decompose velocity into a mean flow $U_i$ and velocity fluctuations $u_i$,
+
+\begin{equation*}
+    \tilde u_i=U_i+u_i
+\end{equation*}
+
+$U_i$ should be a time average, thus
+
+\begin{equation*}
+    U_i=\lim_{T\rightarrow\infty}\frac{1}{T}\int_{t_0}^{t_0+T}\tilde u_i dt
+\end{equation*}
+
+and then the average of fluctuation term
+
+\begin{equation*}
+    \bar u_i=\lim_{T\rightarrow\infty}\frac{1}{T}\int_{t_0}^{t_0+T}(tilde u_i -U_i)dt\equiv 0
+\end{equation*}
+
+The mean value of a spatial derivative of a variable is equal to the corresponding spatial derivative of the mean value of that variable, in other words, we are able to change the order of averaging and taking derivatives.
+
+\begin{align*}
+     & \bar{\frac{\partial \tilde u_i}{\partial x_j}}=\frac{\partial U_i}{\partial x_j} \\
+     & \bar{\frac{\partial u_i}{\partial x_j}}=\frac{\partial}{\partial x_j}\bar{u_i}=0
+\end{align*}
+
+For the pressure $\tilde p$ and the stress $\tilde \sigma_{ij}$, we can also decompose them in a similar way.
+
+\begin{gather*}
+    \tilde p=P+p\\
+    \bar p\equiv0\\
+    \tilde\sigma_{ij}=\Sigma_{ij}+\sigma_{ij}\\
+    \bar\sigma_{ij}\equiv0
+\end{gather*}
+
+Mean stress tensor $\Sigma_{ij}$ is given by
+
+\begin{equation*}
+    \Sigma_{ij}=-P\delta_{ij}+2\mu S_{ij}
+\end{equation*}
+
+And stress fluctuations $\sigma_{ij}$ is given by
+
+\begin{equation*}
+    \sigma_{ij}=-p\delta_{ij}+2\mu s_{ij}
+\end{equation*}
+
+Whre $S_{ij}$ and $s_{ij}$ are the mean strain rate and strain-rate fluctuations,
+
+\begin{align*}
+     & S_{ij}=\frac{1}{2}\left(\frac{\partial U_i}{\partial x_j}+\frac{\partial U_j}{\partial x_i}\right) \\
+     & s_{ij}=\frac{1}{2}\left(\frac{\partial u_i}{\partial x_j}+\frac{\partial u_j}{\partial x_i}\right)
+\end{align*}
+
+\textbf{Correlated variables}
+
+An example (the proof is simple):
+
+\begin{align*}
+    \bar{\tilde u_i \tilde u_j} & =\bar{(U_i+u_i)(U_j+u_j)} \\
+                                & =U_iU_J+\bar{u_iu_j}
+\end{align*}
+
+If $\bar{u_iu_j}\neq0$, then they are said to be correlated; if $\bar{u_iu_j}=0$, then they are uncorrelated.
+
+Correlation coefficient:
+
+\begin{equation*}
+    c_{ij}=\frac{\bar{u_iu_j}}{\sqrt{\bar{u_i^2}\bar{u_j^2}}}
+\end{equation*}
+
+Standard deviation or root-mean-square (rms) amplitude (denoted by $'$):
+
+\begin{equation*}
+    u_i'=\sqrt{\bar{u_i^2}}
+\end{equation*}
+
+\textbf{Equations for the mean flow}
+
+Decompose the equation of continuity $\frac{\partial \tilde{u_i}}{\partial x_i}=0$, we have
+
+\begin{equation*}
+    \frac{\partial U_i}{\partial x_i}+\frac{\partial u_i}{\partial x_i}=0
+\end{equation*}
+
+Take average of all terms, ${\partial u_i}/{\partial x_i}$ vanishes, thus $\partial U_i/\partial x_i=0$. Sub back into the former equation, then $\partial u_i/\partial x_i=0$.
+
+The mean flow is incompressible, and the turbulent fluctuations are also incompressible.
+
+Go back to the equations of motion, we take average
+
+\begin{equation*}
+    U_j\frac{\partial U_i}{\partial x_i}+\bar{u_j\frac{\partial u_i}{\partial x_j}}=\frac{1}{\rho}\frac{\partial}{\partial x_j}\Sigma_{ij}
+\end{equation*}
+
+Where
+
+\begin{equation*}
+    \bar{u_j\frac{\partial u_i}{\partial x_j}=\frac{\partial}{\partial x_j}\bar{u_iu_j}}
+\end{equation*}
+
+represents the mean transport of fluctuating momentum.
+
+Rearrange, we have the Reynolds momentum equation:
+
+\begin{equation*}
+    U_j\frac{\partial U_i}{\partial x_j}=\frac{1}{\rho}\frac{\partial}{\partial x_j}\left(\Sigma_{ij}-\bar{\rho u_iu_j}\right)
+\end{equation*}
+
+Thus, we have the total mean stress $T_{ij}$ defined as
+
+\begin{equation*}
+    T_{ij}=\Sigma_{ij}-\bar{\rho u_iu_j}=-P\delta_{ij}+2\mu S_{ij}-\bar{\rho u_iu_j}
+\end{equation*}
+
+\textbf{The Reynolds stress}
+
+The Reynolds stress tensor, representing the contribution of the turbulent motion to the mean stress tensor,
+
+\begin{equation*}
+    \tau_{ij}=-\bar{\rho u_iu_j}
+\end{equation*}
+
+The diagonal components are normal stresses, they contribute little to the transport of mean momentum; the off-diagonal components are shear stresses, $\tau_{ij}=\tau_{ji}$.
+
+\textbf{Turbulent transport of heat}
+
+We start from the diffusion equation for heat:
+
+\begin{equation*}
+    \frac{\partial\tilde\theta}{\partial t}+\tilde{u_j}\frac{\partial\tilde\theta}{\partial x_j}=\gamma\frac{\partial^2\tilde{\theta}}{\partial x_j\partial x_j}
+\end{equation*}
+
+In the same way, we decompose the temperature $\tilde\theta$:
+
+\begin{equation*}
+    \tilde\theta=\Theta+\theta, \bar\theta=0, \partial\Theta / \partial t=0
+\end{equation*}
+
+Then we have
+
+\begin{align*}
+    U_j\frac{\partial\Theta}{\partial x_j} & =\frac{\partial}{\partial x_j}\left(-\bar{\theta u_j}+\gamma\frac{\partial\Theta}{\partial x_j}\right) \\
+    Q_j                                    & =c_p\rho\left(\bar{\theta u_j-\gamma\partial\Theta / \partial x_j}\right)
+\end{align*}
+
+The transport of heat and momentum are analogical, thus we believe that in turbulence, they are transported in the same way.
+
+\subsection{Elements of the kinetic theory of gases}
+
+\textbf{Pure shear flow}
+
+A steady pure shear flow, where $U_2=U_3=0$, $U_1=U_1(x_2)$. The viscous shear stress
+
+\begin{equation*}
+    \sigma_{12}=\sigma_{21}=\mu\partial U_1/\partial x_2
+\end{equation*}
+
+It must result from molecular transport of momentum  in the $x_2$ direction.
+
+Here, $v_1$, $v_2$ are the velocity of a molecule relative to the mean flow.
+
+\begin{equation*}
+    \sigma_{12}=-\bar{\rho v_1 v_2}
+\end{equation*}
+
+\textbf{Molecular collisions}
+
+Mean free path: $\xi$.
+
+Consider the collision of a molecule from $x_2=-\xi$ with a molecule at $x_2=0$, the molecule from $x_2=-\xi$ absorbs an amount of momentum equal to 
+
+\begin{equation*}
+    M=m\left[U_1(0)-U_1(-\xi)\right]
+\end{equation*}
+
+Expand in a Taylor series and neglect the higher order terms,
+
+\begin{equation*}
+    M=m\xi\frac{\partial U_1}{\partial x_2}
+\end{equation*}
+
+Substitue with collisions per unit area and time, it leads to
+
+\begin{equation*}
+    \sigma_{12}=\alpha MNa=\alpha Nma\xi \partial U_1/\partial x_2
+\end{equation*}
+
+$\alpha$ should be an unknown coefficient of order one, and in air, it is approximatedly $2/3$.
+
+\begin{equation*}
+    \sigma_{12}=\frac{2}{3}\rho a\xi \partial U_1/\partial x_2
+\end{equation*}
+
+Note that $\sigma_{12}=\sigma_{21}=\mu\partial U_1/\partial x_2$, we get
+
+\begin{equation*}
+    \nu=\frac{2}{3}a\xi
+\end{equation*}
+
+%Thus, we have a special Reynolds number,
+%
+%\begin{equation*}
+%    Re=\frac{a\xi}{\nu}=\frac{3}{2}
+%\end{equation*}
+
+\textbf{Characteristic times and lengths}
+
+Knudsen number
+
+\begin{equation*}
+    K=\frac{\xi}{l}=\frac{3Ma}{2Re}
+\end{equation*}
+
+It is a ratio of length scales.
+
+\textbf{The correlation between $v_1$ and $v_2$}
+
+Correlation coefficient $c$ between $v_1$ and $v_2$
+
+\begin{equation*}
+    c=-\frac{\bar{v_1v_2}}{(v_2')^2}
+\end{equation*}
+
+Where $v_2'$ is the rms value of $v_2$, and $v_1'=v_2'$.
+
+An estimate is
+
+\begin{equation*}
+    c\sim\frac{\xi\patial U_1/\partial x_2}{v_2'}
+\end{equation*}
+
+Usually $v_2'$ is of the same order of the speed of sound, we see that the correlation is very poor. This is always valid for pure shear flow, however, it is not true for turbulent shear flow.
+
+%\textbf{Thermal diffusivity}
+
+\subsection{Estimates of the Reynolds stress}
 
 
 
