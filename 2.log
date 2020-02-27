@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.12.1)  16 FEB 2020 15:15
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.12.1)  27 FEB 2020 14:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -395,8 +395,13 @@ LaTeX Font Info:    Try loading font information for U+esint on input line 21.
 File: uesint.fd 
 ) [1
 
-] [2] [3] [4] (./2.aux) )
-(\end occurred when \ifx on line 234 was incomplete) 
+] [2] [3] [4]
+Overfull \hbox (9.62292pt too wide) in paragraph at lines 324--325
+[]\TU/lmr/m/n/10 Neglect the momentum deficit caused by the turbulence, and approximate $\OML/cmm/m/it/10 U[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@
+ []
+
+[5] [6] [7] [8] [9] (./2.aux) )
+(\end occurred when \ifx on line 583 was incomplete) 
 Here is how much of TeX's memory you used:
  12111 strings out of 492922
  229351 string characters out of 6136751
@@ -404,6 +409,6 @@ Here is how much of TeX's memory you used:
  16119 multiletter control sequences out of 15000+600000
  533041 words of font info for 35 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 41i,13n,39p,383b,446s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,11n,39p,383b,446s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on 2.pdf (4 pages).
+Output written on 2.pdf (9 pages).

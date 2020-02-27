@@ -74,23 +74,23 @@ $U_i$ should be a time average, thus
 and then the average of fluctuation term
 
 \begin{equation*}
-    \bar u_i=\lim_{T\rightarrow\infty}\frac{1}{T}\int_{t_0}^{t_0+T}(tilde u_i -U_i)dt\equiv 0
+    \overline u_i=\lim_{T\rightarrow\infty}\frac{1}{T}\int_{t_0}^{t_0+T}(tilde u_i -U_i)dt\equiv 0
 \end{equation*}
 
 The mean value of a spatial derivative of a variable is equal to the corresponding spatial derivative of the mean value of that variable, in other words, we are able to change the order of averaging and taking derivatives.
 
 \begin{align*}
-     & \bar{\frac{\partial \tilde u_i}{\partial x_j}}=\frac{\partial U_i}{\partial x_j} \\
-     & \bar{\frac{\partial u_i}{\partial x_j}}=\frac{\partial}{\partial x_j}\bar{u_i}=0
+     & \overline{\frac{\partial \tilde u_i}{\partial x_j}}=\frac{\partial U_i}{\partial x_j} \\
+     & \overline{\frac{\partial u_i}{\partial x_j}}=\frac{\partial}{\partial x_j}\overline{u_i}=0
 \end{align*}
 
 For the pressure $\tilde p$ and the stress $\tilde \sigma_{ij}$, we can also decompose them in a similar way.
 
 \begin{gather*}
     \tilde p=P+p\\
-    \bar p\equiv0\\
+    \overline p\equiv0\\
     \tilde\sigma_{ij}=\Sigma_{ij}+\sigma_{ij}\\
-    \bar\sigma_{ij}\equiv0
+    \overline\sigma_{ij}\equiv0
 \end{gather*}
 
 Mean stress tensor $\Sigma_{ij}$ is given by
@@ -117,22 +117,22 @@ Whre $S_{ij}$ and $s_{ij}$ are the mean strain rate and strain-rate fluctuations
 An example (the proof is simple):
 
 \begin{align*}
-    \bar{\tilde u_i \tilde u_j} & =\bar{(U_i+u_i)(U_j+u_j)} \\
-                                & =U_iU_J+\bar{u_iu_j}
+    \overline{\tilde u_i \tilde u_j} & =\overline{(U_i+u_i)(U_j+u_j)} \\
+                                & =U_iU_J+\overline{u_iu_j}
 \end{align*}
 
-If $\bar{u_iu_j}\neq0$, then they are said to be correlated; if $\bar{u_iu_j}=0$, then they are uncorrelated.
+If $\overline{u_iu_j}\neq0$, then they are said to be correlated; if $\overline{u_iu_j}=0$, then they are uncorrelated.
 
 Correlation coefficient:
 
 \begin{equation*}
-    c_{ij}=\frac{\bar{u_iu_j}}{\sqrt{\bar{u_i^2}\bar{u_j^2}}}
+    c_{ij}=\frac{\overline{u_iu_j}}{\sqrt{\overline{u_i^2}\overline{u_j^2}}}
 \end{equation*}
 
 Standard deviation or root-mean-square (rms) amplitude (denoted by $'$):
 
 \begin{equation*}
-    u_i'=\sqrt{\bar{u_i^2}}
+    u_i'=\sqrt{\overline{u_i^2}}
 \end{equation*}
 
 \textbf{Equations for the mean flow}
@@ -150,13 +150,13 @@ The mean flow is incompressible, and the turbulent fluctuations are also incompr
 Go back to the equations of motion, we take average
 
 \begin{equation*}
-    U_j\frac{\partial U_i}{\partial x_i}+\bar{u_j\frac{\partial u_i}{\partial x_j}}=\frac{1}{\rho}\frac{\partial}{\partial x_j}\Sigma_{ij}
+    U_j\frac{\partial U_i}{\partial x_i}+\overline{u_j\frac{\partial u_i}{\partial x_j}}=\frac{1}{\rho}\frac{\partial}{\partial x_j}\Sigma_{ij}
 \end{equation*}
 
 Where
 
 \begin{equation*}
-    \bar{u_j\frac{\partial u_i}{\partial x_j}=\frac{\partial}{\partial x_j}\bar{u_iu_j}}
+    \overline{u_j\frac{\partial u_i}{\partial x_j}=\frac{\partial}{\partial x_j}\overline{u_iu_j}}
 \end{equation*}
 
 represents the mean transport of fluctuating momentum.
@@ -164,13 +164,13 @@ represents the mean transport of fluctuating momentum.
 Rearrange, we have the Reynolds momentum equation:
 
 \begin{equation*}
-    U_j\frac{\partial U_i}{\partial x_j}=\frac{1}{\rho}\frac{\partial}{\partial x_j}\left(\Sigma_{ij}-\bar{\rho u_iu_j}\right)
+    U_j\frac{\partial U_i}{\partial x_j}=\frac{1}{\rho}\frac{\partial}{\partial x_j}\left(\Sigma_{ij}-\overline{\rho u_iu_j}\right)
 \end{equation*}
 
 Thus, we have the total mean stress $T_{ij}$ defined as
 
 \begin{equation*}
-    T_{ij}=\Sigma_{ij}-\bar{\rho u_iu_j}=-P\delta_{ij}+2\mu S_{ij}-\bar{\rho u_iu_j}
+    T_{ij}=\Sigma_{ij}-\overline{\rho u_iu_j}=-P\delta_{ij}+2\mu S_{ij}-\overline{\rho u_iu_j}
 \end{equation*}
 
 \textbf{The Reynolds stress}
@@ -178,7 +178,7 @@ Thus, we have the total mean stress $T_{ij}$ defined as
 The Reynolds stress tensor, representing the contribution of the turbulent motion to the mean stress tensor,
 
 \begin{equation*}
-    \tau_{ij}=-\bar{\rho u_iu_j}
+    \tau_{ij}=-\overline{\rho u_iu_j}
 \end{equation*}
 
 The diagonal components are normal stresses, they contribute little to the transport of mean momentum; the off-diagonal components are shear stresses, $\tau_{ij}=\tau_{ji}$.
@@ -194,14 +194,14 @@ We start from the diffusion equation for heat:
 In the same way, we decompose the temperature $\tilde\theta$:
 
 \begin{equation*}
-    \tilde\theta=\Theta+\theta, \bar\theta=0, \partial\Theta / \partial t=0
+    \tilde\theta=\Theta+\theta, \overline\theta=0, \partial\Theta / \partial t=0
 \end{equation*}
 
 Then we have
 
 \begin{align*}
-    U_j\frac{\partial\Theta}{\partial x_j} & =\frac{\partial}{\partial x_j}\left(-\bar{\theta u_j}+\gamma\frac{\partial\Theta}{\partial x_j}\right) \\
-    Q_j                                    & =c_p\rho\left(\bar{\theta u_j-\gamma\partial\Theta / \partial x_j}\right)
+    U_j\frac{\partial\Theta}{\partial x_j} & =\frac{\partial}{\partial x_j}\left(-\overline{\theta u_j}+\gamma\frac{\partial\Theta}{\partial x_j}\right) \\
+    Q_j                                    & =c_p\rho\left(\overline{\theta u_j-\gamma\partial\Theta / \partial x_j}\right)
 \end{align*}
 
 The transport of heat and momentum are analogical, thus we believe that in turbulence, they are transported in the same way.
@@ -221,7 +221,7 @@ It must result from molecular transport of momentum  in the $x_2$ direction.
 Here, $v_1$, $v_2$ are the velocity of a molecule relative to the mean flow.
 
 \begin{equation*}
-    \sigma_{12}=-\bar{\rho v_1 v_2}
+    \sigma_{12}=-\overline{\rho v_1 v_2}
 \end{equation*}
 
 \textbf{Molecular collisions}
@@ -246,7 +246,7 @@ Substitue with collisions per unit area and time, it leads to
     \sigma_{12}=\alpha MNa=\alpha Nma\xi \partial U_1/\partial x_2
 \end{equation*}
 
-$\alpha$ should be an unknown coefficient of order one, and in air, it is approximatedly $2/3$.
+$\alpha$ should be an unknown coefficient of order one, and in air, it is approximately $2/3$.
 
 \begin{equation*}
     \sigma_{12}=\frac{2}{3}\rho a\xi \partial U_1/\partial x_2
@@ -279,7 +279,7 @@ It is a ratio of length scales.
 Correlation coefficient $c$ between $v_1$ and $v_2$
 
 \begin{equation*}
-    c=-\frac{\bar{v_1v_2}}{(v_2')^2}
+    c=-\frac{\overline{v_1v_2}}{(v_2')^2}
 \end{equation*}
 
 Where $v_2'$ is the rms value of $v_2$, and $v_1'=v_2'$.
@@ -287,7 +287,7 @@ Where $v_2'$ is the rms value of $v_2$, and $v_1'=v_2'$.
 An estimate is
 
 \begin{equation*}
-    c\sim\frac{\xi\patial U_1/\partial x_2}{v_2'}
+    c\sim\frac{\xi\partial U_1/\partial x_2}{v_2'}
 \end{equation*}
 
 Usually $v_2'$ is of the same order of the speed of sound, we see that the correlation is very poor. This is always valid for pure shear flow, however, it is not true for turbulent shear flow.
@@ -296,8 +296,288 @@ Usually $v_2'$ is of the same order of the speed of sound, we see that the corre
 
 \subsection{Estimates of the Reynolds stress}
 
+Rate of turbulent moment transfer:
 
+\begin{equation*}
+    \tau_{12}=-\overline{\rho u_1 u_2}
+\end{equation*}
 
+Rate of heat transfer:
+
+\begin{equation*}
+    H_2=\rho c_p \overline{\theta u_2}
+\end{equation*}
+
+\textbf{Reynolds stress and vortex streching}
+
+The existence of a Reynolds stress requires that the velocity fluctrations $u_1$ and $u_2$ be correlated.
+And actually, eddies whose principal axis is roughly aligned with that of the mean strain rate, would be effective.
+
+\textbf{The mixing-length model}
+
+A moving point starts from $x_2=0$ to $x_2$, if momentum is not lost as it travels, the moment deficit
+
+\begin{equation*}
+    \Delta M=\rho\left(U_1(x_2)-U_1(0)\right)+\rho\left(u_1(x_2,t)-u_1(0,0)\right)
+\end{equation*}
+
+Neglect the momentum deficit caused by the turbulence, and approximate $U_1(x_2)-U_1(0)$ by taking gradient at $x_2=0$,
+
+\begin{equation*}
+    \Delta M=\rho x_2 \partial U_1/\partial x_2
+\end{equation*}
+
+Then average momentum flux
+
+\begin{equation*}
+    \tau_{12}=\frac{1}{2}\rho\frac{\partial U_1}{\partial x_2}\frac{d}{dt}\left(\overline{x_2^2}\right)
+\end{equation*}
+
+And
+
+\begin{equation*}
+    \frac{d}{dt}\left(\overline{x_2^2}\right)=2\overline{x_2u_2}
+\end{equation*}
+
+should not continue to rise as the distance traveled increases. When $x_2$ becomes comparable to some length scale $l$, $\overline{x_2u_2}\sim u_2'l$. $u_2'$ is the rms velocity in $x_2$ direction, and $l$ is the mixing length.
+
+So that, we have
+
+\begin{equation*}
+    \tau_{12}=c_1\rho u_2' l \partial U_1/\partial x_2
+\end{equation*}
+
+$c_1$ as a coefficient is unknown.
+
+Here we define the eddy viscosity $\nu_T$, the turbulent exchange coefficient for momentum, as
+
+\begin{equation*}
+    \tau_{12}=\rho\nu_T\partial U_1/\partial x_2
+\end{equation*}
+
+\begin{equation*}
+    \nu_T=c_1u_2'l
+\end{equation*}
+
+\textbf{The length-scale problem}
+
+Local length scale of the mean flow
+
+\begin{equation*}
+    L=\frac{\partial U_1/\partial x_2}{\partial^2 U_1/\partial x_2^2}
+\end{equation*}
+
+Only if $L\gg 0.5l$, the approximation $U_1(x_2)-U_1(0)=x_2\partial U_1/\partial x_2$ is valid.
+
+For larrge eddies, $l$ could be of the same order as the local length scale $L$. The Taylor series expansion $U_1(x_2)-U_1(0)$ is not good enough.
+
+\textbf{A neglected transport term}
+
+We neglected the term $\rho\left(u_1(x_2,t)-u_1(0,0)\right)$. We can call it $\rho\Delta u_1$.
+
+The corresponding momentum flux should be $\rho\overline{u_2\Delta u_1}$, it could b appreciable for large $x_2$ (of order $l$).
+
+\textbf{The mixing length as an integral scale}
+
+\begin{equation*}
+    x_2(t)=\int_0^t u_2(t')dt'
+\end{equation*}
+
+then
+
+\begin{equation*}
+    \frac{1}{2}\frac{d}{dt}\overline{x_2^2}=\int_0^t\overline{u_2(t)u_2(t')}dt'
+\end{equation*}
+
+The correlatin between $u_2(t)$ and $u_2(t')$ should only depend on the time difference $\tau=t-t'$.
+
+\begin{equation*}
+    c(\tau)=\frac{\overline{u_2(t)u_2(t-\tau)}}{\overline{u_2^2}}
+\end{equation*}
+
+thus,
+
+\begin{equation*}
+    \frac{1}{2}\frac{d}{dt}\overline{x_2^2}=\overline{u_2^2}\int_0^t c(\tau)d\tau
+\end{equation*}
+
+Actually, $c(\tau)$ decreases as $\tau$ increases, and
+
+\begin{equation*}
+    T=\int_0^\infty c(\tau)d\tau
+\end{equation*}
+
+Where the time $T$ is called the Lagrangian integral scale.
+
+If we define the Lagrangian integral length as $l_L=u_2'T$,
+
+\begin{equation*}
+    \frac{1}{2}\frac{d}{dt}\overline{x_2^2}=u_2' l_L
+\end{equation*}
+
+The time scale $T$ is hard to measure, so we usually use the transverse Eulerian integral scale $l$ instead.
+
+\iffalse
+\textbf{The gradient-transport fallacy}
+
+\textbf{Further estimates}
+
+\textbf{Recapitulation}
+\fi
+
+\subsection{Turbulent heat transfer}
+
+\textbf{Reynolds' analogy}
+
+Vertical heat flux $H_2$
+
+\begin{equation*}
+    H_2=\rho c_p \overline{u_2\theta}
+\end{equation*}
+
+We define the eddy diffusivity for heat $\gamma_T$ by
+
+\begin{equation*}
+    H_2=-\rho c_p \gamma_T \partial \Theta/\partial x_2
+\end{equation*}
+
+In most flows, $\nu_T/\gamma_T$ is close to one. Which means, turbulence transports heat just as rapidly as momentum.
+
+We assume $\nu_T/\gamma_T=1$, then
+
+\begin{equation*}
+    \frac{H_2}{c_p\tau_{12}}=-\frac{\partial \Theta /\partial x_2}{\partial U_1/\partial x_2}
+\end{equation*}
+
+The equation above is called the Reynolds' analogy.
+
+\textbf{The mixing-length model}
+
+Mixing-length theory estimates the heat flux as
+
+\begin{equation*}
+    H_2=-\rho c_p c_5 u_2' l \frac{\partial \Theta}{\partial x_2}
+\end{equation*}
+
+\subsection{Turbulent shear flow near a rigid wall}
+
+A rigid, porous wall lies along x-axis, and we apply the concepts in this chapter to the pure shear flow in the vicinity of it.
+
+The mean flow is steady and homogeneous in the $x_1$, $x_3$ plane, and $U_3=0$. Also, we have $\partial P/\partial x_i=0$ for $i=1,2,3$.
+
+Equations of motion:
+
+\begin{equation*}
+    \frac{\partial U_2}{\partial x_2}=0\\
+    U_2\frac{\partial U_1}{\partial x_2}=\frac{1}{\rho}\frac{\partial}{\partial x_2}T_{12}
+\end{equation*}
+
+We know that $U_2$ should be uniform,
+
+\begin{equation*}
+    U_2=v_m
+\end{equation*}
+
+Thus, we can integrate the latter equation,
+
+\begin{equation*}
+    \rho v_m U_1=T_{12}-T_{12}(0)
+\end{equation*}
+
+We now define a friction velocity $u_*$,
+
+\begin{equation*}
+    T_{12}(0)=\rho u_*^2
+\end{equation*}
+
+For large values of $x_2$, the viscous contribution to the total sher stress $T_{12}$ should be negligible,
+
+\begin{equation*}
+    v_m U_1=-\overline{u_1 u_2}-u_*^2
+\end{equation*}
+
+\textbf{A flow with constant stress}
+
+If $v_m=0$, the Reynolds stress $-\overline{u_1 u_2}$ is equal to  $u_*^2$. A flow of this kind is called a constant-stress layer.
+
+\begin{equation*}
+    u_*/l=\alpha_1\partial U_1/\partial x_2
+\end{equation*}
+
+where $\alpha_1$ is of order one.
+
+For the flow at level $x_2$, the only choice of $l$ should be
+
+\begin{equation*}
+    l=\alpha_2 x_2
+\end{equation*}
+
+Thus,
+
+\begin{gather*}
+    \frac{\partial U_1}{\partial x_2}=\frac{u_*}{\kappa x_2}\\
+    \frac{U_1}{u_*}=\frac{1}{\kappa}\ln x_2+const
+\end{gather*}
+
+Here, $\kappa$ is known as the constant of von K\`{a}rm\`{a}n. Experiments show that it is approximately $0.4$.
+
+The no-slip condition cannot be enforced because when $x_2$ is too small, the Reynolds number $x_2U_1/\nu$ is of order unity.
+
+The Reynolds stress
+
+\begin{equation*}
+    -\overline{u_1 u_2}=\kappa u_*x_2\partial U_1/\partial x_2
+\end{equation*}
+
+\textbf{Nonzero mass transfer}
+
+If $v_m\neq-$, there are two characteristic velocities, $u_*$ and $v_m$. However, the length scale $l$ is still propotional to $x_2$.
+
+We need additional restrictions to solve this problem. Let us assume $\partial U_1/\partial x_2$ is propotional to  $w/x_2$, where $w$ is an undetermined velocity scale that depens on $u_*$ and $v_m$.
+
+\begin{equation*}
+    \frac{\partial U_1}{\partial x_2}=\frac{w}{x_2}
+\end{equation*}
+
+By integrating the equation, we have
+
+\begin{equation*}
+    \frac{U_1}{w}=\ln x_2 +const
+\end{equation*}
+
+$w$ must be determined experimentally. And we could write
+
+\begin{equation*}
+    w/u_*=f(v_m/u_*)
+\end{equation*}
+
+Experimental results show that if $v_m>0$, the Reynolds stress is larger than $u_*^2$, $w/u_*$ increases; if $v_m\gg u_*$, the friction velocity becomes unimportant, $w$ should be proportional to $v_m$; if $v_m<0$, the Reynolds stress is smaller than $u_*^2$, thus $w/u_*$ decreases.
+
+\textbf{The mixing-length approach}
+
+Substitute into the equation of motion,
+
+\begin{equation*}
+    -\overline{u_1 u_2}=u_*^2+v_m w (\ln x_2 +c)
+\end{equation*}
+
+If we similarly use a mixing-length model,
+
+\begin{equation*}
+    -\overline{u_1 u_2}=\alpha_3 w x_2 \partial U_1/\partial x_2
+\end{equation*}
+
+where $\alpha_3$ is an unknown coefficient, and
+
+\begin{equation*}
+    -\overline{u_1 u_2}=\alpha_3 w^2
+\end{equation*}
+
+We find that the Reynolds stress becomes independent of $x_2$, which is clearly not a correct solution.
+
+\textbf{The limitations of mixing-length theory}
+
+Mixing-length theory is incapable of describing turbulent flows containing more than one characteristic velocity.
 
 
 \ifx\allfiles\undefined         %独立编译
