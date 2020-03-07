@@ -10,16 +10,292 @@
 \fi
 
 
+\section{The dynamics of turbulence}
 
+Two major questions:
 
+\begin{itemize}
+    \item How is the kinetic energy of the turbulence maintained?
+    \item Why are vorticity and vortex stretching so important to the study of turbulence?
+\end{itemize}
 
+\subsection{Kinetic energy of the mean flow}
 
+Mean flow energy: $\frac{1}{2}U_iU_i$
 
+We already have
 
+\begin{equation*}
+    U_j\frac{\partial U_i}{\partial x_j}=\frac{\partial}{\partial x_j}\left(\frac{T_{ij}}{\rho}\right)
+\end{equation*}
 
+Multiply $U_i$ on both sides,
 
+\begin{equation*}
+    \rho U_j\frac{\partial}{\partial x_j}\left(\frac{1}{2}U_iU_i\right)=\frac{\partial}{\partial x_j}(T_{ij}U_i)-T_{ij}\frac{\partial U_i}{\partial x_j}
+\end{equation*}
 
+Note that
 
+\begin{equation*}
+    T_{ij}\frac{\partial U_i}{\partial x_j}=T_{ij}S_{ij}
+\end{equation*}
+
+by the definition of $S_{ij}$.
+
+This term,
+
+\begin{equation*}
+    \frac{\partial}{\partial x_j}(T_{ij}U_i)
+\end{equation*}
+
+we can use the Gauss' theorem,
+
+\begin{equation*}
+    \int_V \frac{\partial}{\partial x_j}(T_{ij}U_i) dV=\int_S \frac{\partial}{\partial x_j}(T_{ij}U_i) ds
+\end{equation*}
+
+If we use a control volume, and on its surface $T_{ij}$ or $U_i$ is zero, then we know that the total amount of kinetic energy is changed by $T_{ij}S_{ij}$.
+
+$T_{ij}S_{ij}$ is called the deformation work.
+
+\textbf{Pure shear flow (omitted)}
+
+\textbf{The effects of viscosity}
+
+Substitute $T_{ij}$,
+
+\begin{equation*}
+    U_j\frac{\partial}{\partial x_j}\left(\frac{1}{2}U_iU_i\right)=\frac{\partial}{\partial x_j}\left(-\frac{P}{\rho}U_j+2\nu U_i S_{ij}-\overline{u_iu_j}U_i\right)+2\nu S_{ij}S_{ij}+\overline{u_iu_j}S_{ij}
+\end{equation*}
+
+\begin{itemize}
+    \item $-\frac{\partial}{\partial x_j}\frac{P}{\rho}U_j$: pressure work
+    \item $2\frac{\partial}{\partial x_j}\nu U_i S_{ij}$: transport of mean-flow energy by viscous stresses
+    \item $-\frac{\partial}{\partial x_j}\overline{u_iu_j}U_i$: transport of mean-flow energy by Reynolds stresses
+\end{itemize}
+
+And the last two terms are negligible in most flows.
+
+We define the representative velocity $\mathcal{u}$
+
+\begin{equation*}
+    \mathcal{u}^2=\frac{1}{3}\overline{u_i u_i}
+\end{equation*}
+
+\subsection{Kinetic energy of the turbulence}
+
+The turbulent energy budget
+
+\begin{equation*}
+    \begin{aligned}
+        U_j\frac{\partial}{\partial x_j}\left(\frac{1}{2}\overline{u_iu_i}\right)=&-\frac{\partial}{\partial x_j}\left(\frac{1}{\rho}\overline{u_jP}+\frac{1}{2}\overline{u_iu_iu_j}-2\nu\overline{u_i s_{ij}}\right)\\
+        &-\overline{u_iu_j}S_{ij}-2\nu\overline{s_{ij}s_{ij}}
+    \end{aligned}
+\end{equation*}
+
+The fluctuating rate of strain
+
+\begin{equation*}
+    s_{ij}=\frac{1}{2}\left(\frac{\partial u_i}{\partial x_j}+\frac{\partial u_j}{\partial x_i}\right)
+\end{equation*}
+
+The deformation work terms $\overline{u_i u_j}S_{ij}$ occurs in both equations with opposite signs. That is the exchange of energy between the mean flow and the turbulence.
+
+Viscous dissipation: $-2\nu\overline{s_{ij}s_{ij}}$, it is a drain of energy and could not be neglected.
+
+\textbf{Production equals dissipation}
+
+In a steady, homogeneous, pure shear flow, we have
+
+\begin{equation*}
+    -\overline{u_iu_j}S_{ij}=2\nu\overline{s_{ij}s_{ij}}
+\end{equation*}
+
+The rate of production of turbulent energy by Reynolds stresses euqals the rate of viscous dissipation. In most flows, this is not always true, but they are always of the same order of magnitude.
+
+With scale relation, we can find
+
+\begin{equation*}
+    \overline{s_{ij}s_{ij}}\gg S_{ij} S_{ij}
+\end{equation*}
+
+When the Reynolds number is large, the fluctuating strain rate is much larger than the mean rate of strain.
+
+\textbf{Taylor microscale}
+
+In isotropic turbulence, the dissipation rate
+
+\begin{equation*}
+    \epsilon=2\nu\overline{s_{ij}}s_{ij}=15\nu\overline{\left(\partial u_1/\partial x_1\right)^2}
+\end{equation*}
+
+We define a new length scale $\lambda$ (Taylor microscale) by
+
+\begin{equation*}
+    \overline{\left(\partial u_1/\partial x_1\right)^2}=\frac{\overline{u-1}}{\lambda^2}
+\end{equation*}
+
+Then
+
+\begin{equation*}
+    \epsilon=15\nu\mathcal{u}^2/\lambda^2
+\end{equation*}
+
+If $S_{ij}$ is of order $\mathcal{u}/\ell$ and $-\overline{u_i u_j}$ is of order $\mathcal{u}^2$, then
+
+\begin{equation*}
+    \mathcal{A}\mathcal{u}^3/\ell=15\nu\mathcal{u}^2/\lambda^2
+\end{equation*}
+
+Thus
+
+\begin{equation*}
+    \frac{\lambda}{\ell}=\left(\frac{15}{\mathcal{A}}\right)^1/2 R_\ell^{-1/2}
+\end{equation*}
+
+Where $\mathcal{A}$ is an undetermined constant, presumably of order one. We know that the Taylor microscale is always much smaller than the integral scale.
+
+\textbf{Scale relations}
+
+The smallest scale is the Kolmogorov microscale $\eta$
+
+\begin{equation*}
+    \eta=(\nu^3/\epsilon)^1/4
+\end{equation*}
+
+The relation between $\ell$, $\lambda$ and $\eta$
+
+\begin{align*}
+    \frac{\lambda}{\ell}&=\frac{15}{\mathcal{A}}R_\lambda^{-1}\\
+    \frac{\lambda}{\eta}&=15^{1/4}R_\lambda^1/2
+\end{align*}
+
+Where $R_\lambda=\mathcal{u}\lambda/\nu$ is called the microscale Reynolds number.
+
+\textbf{Sectral energy transfer}
+
+If there is only one charateristic length $\ell$, the dissipation rate can be estimated as
+
+\begin{equation*}
+    \epsilon=\mathcal{A}\mathcal{u}^3/\ell
+\end{equation*}
+
+Considering the production $\mathcal{P}$ and dissipation $\epsilon$
+
+\begin{equation*}
+    -\overline{u_iu_j}S_{ij}\sim\mathcal{A}\mathcal{u}^3/\ell
+\end{equation*}
+
+\textbf{Further estimates}
+
+The pressure-work term
+
+\begin{equation*}
+    -\frac{\partial}{\partial x_j}\left(\frac{1}{\rho}\overline{u_j p}\right)\sim\frac{\mathcal{u}^3}{\ell}
+\end{equation*}
+
+Mean transport of turbulent energy by turbulent motion
+
+\begin{equation*}
+    -\frac{\partial}{\partial x_j}\left(\frac{1}{2}\overline{u_iu_iu_j}\right)\sim\frac{\mathcal{u}^3}{\ell}
+\end{equation*}
+
+Transport by viscous stresses
+
+\begin{equation*}
+    2\nu\frac{\partial}{\partial x_j}\sim\frac{\mathcal{u}^3}{\ell}R_l^{-1}
+\end{equation*}
+
+\textbf{Wind-tunnel turbulence}
+
+Nearly homogeneous turbulence in a low-speed wind tunnel.
+
+Choose $U_1$ as the only non-zero component of the mean velocity.
+
+\begin{equation*}
+    U_1\frac{\partial}{\partial x_1}\left(\frac{1}{2}\overline{u_iu_i}\right)=-\frac{\partial}{\partial x_1}\left(\frac{1}{\rho}\overline{u_1p}+\frac{1}{2}\overline{u_iu_iu_1}\right)-\epsilon
+\end{equation*}
+
+We assume that $R_\ell$ is large, the viscous transport term can be neglected.
+
+\begin{equation*}
+    U_1\frac{\partial}{\partial x_1}\left(\frac{1}{2}\overline{u_iu_i}\right)=\mathcal{O}\left(\frac{U_1}{x_1}\mathcal{u}^2\right)
+\end{equation*}
+
+\begin{equation*}
+    -\frac{\partial}{\partial x_1}\left(\frac{1}{\rho}\overline{u_1p}+\frac{1}{2}\overline{u_iu_iu_1}\right)-\epsilon=\mathcal{O}\left(\frac{\mathcal{u}^3}{x_1}\right)
+\end{equation*}
+
+\begin{equation*}
+    \epsilon=\mathcal{O}\left(\frac{\mathcal{u}^3}{\ell}\right)
+\end{equation*}
+
+In grid turbulence, velocity fluctuations are small: $\mathcal{u}\ll U$. Thus,
+
+\begin{equation*}
+    U_1\frac{\partial}{\partial x_1}\left(\frac{1}{2}\overline{u_iu_i}\right)=-\epsilon
+\end{equation*}
+
+And dimensionally,
+
+\begin{equation*}
+    \frac{U_1}{x_1}=C\frac{\mathcal{u}}{\ell}
+\end{equation*}
+
+Which suggest that the time scale of the flow is of the same order of the time scale of the turbulence.
+
+The change of $\ell$ and $\mathcal{u}$ downstream is omitted here.
+
+\textbf{Pure shear flow}
+
+Omitted here.
+
+\subsection{Vorticity dynamics}
+
+What do we mean by saying that turbulence is rotational and dissipative
+
+\textbf{Vorticity vector and rotation tensor}
+
+The vorticity is the curl of the velocity vector:
+
+\begin{equation*}
+    \tilde{\omega_i}=\epsilon_{ijk}\frac{\partial \tilde{u_k}}{\partial x_j}
+\end{equation*}
+
+$\epsilon_{ijk}$: Levi-Civita notation, $\epsilon_{123}=\epsilon_{231}=\epsilon_{312}=1$, $\epsilon_{321}=\epsilon_{132}=\epsilon_{213}=-1$.
+
+The deformation rate can be split into two parts: symmetric and skew-symmetric part.
+
+\begin{equation*}
+    \frac{\partial\tilde{u_i}}{\partial x_j}=\tilde{s_{ij}}+\tilde{r_{ij}}
+\end{equation*}
+
+Symmetric: strain rate
+
+\begin{equation*}
+    \tilde{s_{ij}}=\frac12\left(\frac{\partial \tilde{u_i}}{\partial x_j}+\frac{\partial \tilde{u_j}}{\partial x_i}\right)
+\end{equation*}
+
+Skew-symmetric: rotation tensor
+
+\begin{equation*}
+    \tilde{r_{ij}}=\frac12\left(\frac{\partial \tilde{u_i}}{\partial x_j}-\frac{\partial \tilde{u_j}}{\partial x_i}\right)
+\end{equation*}
+
+The vorticity vector is related only to the skew-symmetric part
+
+\begin{equation*}
+    \tilde\omega_i=\epsilon_{ijk}\tilde{r_{kj}}
+\end{equation*}
+
+And
+
+\begin{equation*}
+    \tilde{r_{ij}}=-\frac12\epsilon_{ijk}\tilde{\omega_k}
+\end{equation*}
+
+\textbf{Vortex terms in the equations of motion}
 
 
 

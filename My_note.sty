@@ -1,17 +1,22 @@
 % My_note.sty
-\ProvidesPackage{My_note}[2020/1/29 v1.0]
+\ProvidesPackage{My_note}[20200304 v1.1]
 
-\RequirePackage{amsmath}            %数学公式包
+\RequirePackage{ctex}               %中文支持
+\RequirePackage{lmodern}            %去除字体大小导致的warning
+
+
+\RequirePackage{amsmath}            %数学公式包，花体大写\mathcal{}
 \newcommand*{\dif}{\mathop{}\!\mathrm{d}}   %微分d
 
 \RequirePackage{esint}              %带圈的积分 \varoiint \iiint
+\RequirePackage{BOONDOX-cal}        %花体小（大）写字母，\mathcal{}
 \RequirePackage[version=4]{mhchem}  %化学符号
 \RequirePackage{graphicx}           %插图
 \RequirePackage{float}              %浮动包 支持!H
 \RequirePackage{longtable}          %长表格
-\RequirePackage{booktabs}           %表格toprule midrule bottomrule
+\RequirePackage{booktabs}           %表格\toprule \midrule \bottomrule
 
-\RequirePackage[scr]{rsfso}
+\RequirePackage[scr]{rsfso}         %花体大写\mathscr{}
 \newcommand{\Laplace}{\mathscr{L}}
 \newcommand{\Fourier}{\mathscr{F}}  %拉氏变换 傅氏变换
 
