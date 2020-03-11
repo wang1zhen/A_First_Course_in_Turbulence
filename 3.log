@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.12.1)  7 MAR 2020 16:54
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.12.1)  11 MAR 2020 20:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -669,15 +669,15 @@ LaTeX Font Info:    Font shape `U/BOONDOX-cal/m/n' will be
 (Font)              scaled to size 7.0pt on input line 80.
 LaTeX Font Info:    Font shape `U/BOONDOX-cal/m/n' will be
 (Font)              scaled to size 5.0pt on input line 80.
- [2] [3] [4] [5] [6] (./3.aux) )
-(\end occurred when \ifx on line 302 was incomplete) 
+ [2] [3] [4] [5] [6] [7] [8] [9] (./3.aux) )
+(\end occurred when \ifx on line 441 was incomplete) 
 Here is how much of TeX's memory you used:
- 17830 strings out of 492922
- 397945 string characters out of 6136751
- 482128 words of memory out of 5000000
- 21683 multiletter control sequences out of 15000+600000
+ 17834 strings out of 492922
+ 397953 string characters out of 6136751
+ 484179 words of memory out of 5000000
+ 21687 multiletter control sequences out of 15000+600000
  544652 words of font info for 58 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 61i,9n,70p,407b,446s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 61i,10n,70p,407b,446s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on 3.pdf (6 pages).
+Output written on 3.pdf (9 pages).

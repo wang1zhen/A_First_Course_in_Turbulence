@@ -297,6 +297,145 @@ And
 
 \textbf{Vortex terms in the equations of motion}
 
+Omitted here.
+
+\textbf{Reynolds stress and vorticity}
+
+Decompose the vorticity $\tilde{\omega_i}$
+
+\begin{equation*}
+    \tilde{\omega_i}=\Omega_i+\omega_i,\quad\overline{\omega_i}=0
+\end{equation*}
+
+The equation for the mean velocity $U_i$
+
+\begin{equation*}
+    0=-\frac{\p}{\p x_i}\left(\frac{P}{\rho}+\frac12U_jU_j+\frac12\overline{u_ju_j}\right)+\epsilon_{ijk}\left(U_j\Omega_k+\overline{u_j\omega_k}\right)+\nu\frac{\p^2U_i}{\p x_j \p x_j}
+\end{equation*}
+
+Since $\overline{u_ju_j}\ll U_jU_j$, and we consider such a two-dimensional flow that $U_1\gg U_2$, $U_3=0$, $\p/\p x_1\ll\p/\p x_2$, also neglect the viscous term and the contribution of the turbulence,
+
+\begin{equation*}
+    U_1\frac{\p U_1}{\p x_1}+U_2\frac{\p U_1}{\p x_2}=-\frac{1}{\rho}\frac{\p P}{\p x_1}+\overline{u_2\omega_3}-\overline{u_3\omega_2}
+\end{equation*}
+
+For the Reynolds shear stress $-\overline{u_1u_2}$,
+
+\begin{equation*}
+    \frac{\p}{\p x_2}\left(-\overline{u_1 u_2}\right)=\overline{u_2\omega_3}-\overline{u_3\omega_2}
+\end{equation*}
+
+\textbf{The vorticity equation}
+
+Taking curl operator to the Navier-Stokes equation ($\epsilon_{pqi}\p/\p x_q$), and some analysis,
+
+\begin{equation*}
+    \frac{\p \tilde{\omega}_p}{\p t}=\tilde{\omega}_k\frac{\p \tilde{u}_p}{\p x_k}-\tilde{u}_k\frac{\p \tilde{\omega}_k}{\p x_k}-\nu\frac{\p}{\p x_p}\left(\frac{\p \tilde{\omega}_k}{\p x_k}\right)+\nu\frac{\p^2\tilde{\omega}_p}{\p x_k \p x_k}
+\end{equation*}
+
+The first viscous term
+
+\begin{equation*}
+    \frac{\p \tilde{\omega}_k}{\p x_k}=\epsilon_{ijk}\frac{\p^2\tilde{u}_j}{\p x_i\p x_k}=0
+\end{equation*}
+
+Thus, finally
+
+\begin{equation*}
+    \frac{\p \tilde\omega_i}{\p t}+\tilde u_j\frac{\p\tilde\omega_i}{\p x_j}=\tilde\omega_j\frac{\p\tilde u_i}{\p x_j}+\nu\frac{\p^2\tilde\omega_i}{\p x_j\p x_j}
+\end{equation*}
+
+Note that the skew-symmetric part $\tilde r_{ij}$ does not contribute to the equation, the equation could be further simplified as
+
+\begin{equation*}
+    \frac{\p \tilde\omega_i}{\p t}+\tilde u_j\frac{\p\tilde\omega_i}{\p x_j}=\tilde\omega_j\tilde s_{ij}+\nu\frac{\p^2\tilde\omega_i}{\p x_j\p x_j}
+\end{equation*}
+
+\textbf{Vorticity in turbulent flows}
+
+\begin{equation*}
+    U_j\frac{\p \Omega_i}{\p x_j}=-\overline{u_j\frac{\p\omega_i}{\p x_j}}+\overline{{\omega_j} s_{ij}}+\Omega_jS_{ij}+\nu\frac{\p^2\Omega_i}{\p x_j\p x_j}
+\end{equation*}
+
+The mean vorticity and fluctuating vorticity are divergenceless
+
+\begin{equation*}
+    \frac{\p\Omega_i}{\p x_i}=0,\qquad\frac{\p\omega_i}{\p x_i}=0
+\end{equation*}
+
+Continuity:
+
+\begin{equation*}
+    \frac{\p u_i}{\p x_i}=0
+\end{equation*}
+
+We have
+
+\begin{align*}
+    \overline{u_j\frac{\p\omega_i}{\p x_j}}&=\frac{\p}{\p x_j}\left(\overline{u_j\omega_i}\right)\\
+    \overline{{\omega_j} s_{ij}}&=\frac{\p}{\p x_j}\left(\overline{\omega_j u_i}\right)
+\end{align*}
+
+The first term is a transport ``divergence'', while the second term is the gain of mean vorticity caused by the stretching and rotation of fluctuating voriticity components by fluctuating strain rates.
+
+\textbf{Two-dimensional mean flow}
+
+\textbf{The dynamics of $\Omega_i\Omega_i$}
+
+\textbf{The equation for $\overline{\omega_i\omega_i}$}
+
+\textbf{Turbulence is rotational}
+
+\textbf{An approximate vorticity budget}
+
+\textbf{Multiple length scales}
+
+\textbf{Stretching of magnetic field lines}
+
+\subsection{The dynamics of temperature fluctuations}
+
+\begin{equation*}
+    U_j\frac{\p}{\p x_j}\left(\frac12\overline{\theta^2}\right)=-\frac{\p}{\p x_j}\left[\frac12\overline{\theta^2u_j}-\gamma\frac{\p}{\p x_j}\left(\frac12\overline{\theta^2}\right)\right]-\overline{\theta u_j}\frac{\partial \Theta}{\p x_j}-\gamma\overline{\frac{\p\theta}{\p x_j}\frac{\p\theta}{\p x_j}}
+\end{equation*}
+
+For steady homogeneous shear flow
+
+\begin{equation*}
+    -\overline{\theta u_j}\frac{\p \Theta}{\p x_j}=\gamma\overline{\frac{\p \theta}{\p x_j}\frac{\p \theta}{\p x_j}}
+\end{equation*}
+
+\textbf{Microscales in the temperature field}
+
+Let us define
+
+\begin{equation*}
+    \overline{\left(\frac{\p\theta}{\p x_1}\right)^2}=2\frac{\overline{\theta^2}}{\lambda_\theta^2}
+\end{equation*}
+
+Then the isotropic temperature field has
+
+\begin{equation*}
+    \gamma\overline{\frac{\p \theta}{\p x_j}\frac{\p \theta}{\p x_j}}=6\frac{\overline{\theta^2}}{\lambda_\theta^2}
+\end{equation*}
+
+With order analysis we obtain
+
+\begin{equation*}
+    \frac{\lambda_\theta}{\lambda}=C\left(\frac{\gamma}{\nu}\right)^{1/2}
+\end{equation*}
+
+$C$ is of order one.
+
+\dots
+
+\textbf{Buoyant convection}
+
+\textbf{Richardson numbers}
+
+\textbf{Monin-Oboukhov length}
+
+\textbf{Convection in the atmospheric boundary layer}
+
 
 
 \ifx\allfiles\undefined         %独立编译
