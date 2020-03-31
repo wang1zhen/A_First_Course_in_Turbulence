@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.12.1)  11 MAR 2020 20:31
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2020.3.24)  31 MAR 2020 20:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**3
-(./3.tex
+**4
+(./4.tex
 LaTeX2e <2018-12-01>
 (c:/texlive/2019/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
@@ -607,8 +607,8 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 (c:/texlive/2019/texmf-dist/tex/latex/subfigure/subfigure.cfg)
 \subfig@top=\skip85
 \subfig@bottom=\skip86
-)) (./3.aux)
-\openout1 = `3.aux'.
+)) (./4.aux)
+\openout1 = `4.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
@@ -631,53 +631,53 @@ LaTeX Info: Redefining \selectfont on input line 4.
 
 Package chemgreek Info: Activating mapping `fontspec' on line 4.
 
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 24.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 26.
  (c:/texlive/2019/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 24.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 26.
  (c:/texlive/2019/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 24.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 26.
  (c:/texlive/2019/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 24.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 26.
  (c:/texlive/2019/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.53937> on input line 24.
+(Font)              <10.53937> on input line 26.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 24.
+(Font)              <7> on input line 26.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 24.
-LaTeX Font Info:    Try loading font information for U+esint on input line 24.
+(Font)              <5> on input line 26.
+LaTeX Font Info:    Try loading font information for U+esint on input line 26.
  (c:/texlive/2019/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
-) [1
-
-]
-LaTeX Font Info:    Try loading font information for U+BOONDOX-cal on input line 80.
+)
+LaTeX Font Info:    Try loading font information for U+BOONDOX-cal on input line 40.
  (c:/texlive/2019/texmf-dist/tex/latex/boondox/uboondox-cal.fd
 File: uboondox-cal.fd 2011/04/26 Fontinst v1.933 font definitions for U/BOONDOX-cal.
 )
 LaTeX Font Info:    Font shape `U/BOONDOX-cal/m/n' will be
-(Font)              scaled to size 10.53937pt on input line 80.
+(Font)              scaled to size 10.53937pt on input line 40.
 LaTeX Font Info:    Font shape `U/BOONDOX-cal/m/n' will be
-(Font)              scaled to size 7.0pt on input line 80.
+(Font)              scaled to size 7.0pt on input line 40.
 LaTeX Font Info:    Font shape `U/BOONDOX-cal/m/n' will be
-(Font)              scaled to size 5.0pt on input line 80.
- [2] [3] [4] [5] [6] [7] [8] [9] (./3.aux) )
-(\end occurred when \ifx on line 441 was incomplete) 
+(Font)              scaled to size 5.0pt on input line 40.
+ [1
+
+] [2] (./4.aux) )
+(\end occurred when \ifx on line 128 was incomplete) 
 Here is how much of TeX's memory you used:
- 17834 strings out of 492922
- 397953 string characters out of 6136751
- 484179 words of memory out of 5000000
- 21687 multiletter control sequences out of 15000+600000
+ 17836 strings out of 492922
+ 397962 string characters out of 6136751
+ 483191 words of memory out of 5000000
+ 21689 multiletter control sequences out of 15000+600000
  544652 words of font info for 58 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 61i,10n,70p,407b,446s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 61i,5n,70p,407b,446s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on 3.pdf (9 pages).
+Output written on 4.pdf (2 pages).

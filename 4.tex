@@ -11,6 +11,139 @@
 
 \section{Boundary-free shear flows}
 
+\subsection{Almost parallel, two-dimensional flows}
+
+Plane flows and axisymmetric flows: the mean velocity field is entirely confied to planes.
+
+Plane flows: mean flow in planes parallel to a given plane is identical;
+
+Axisymmetric flows: mean flow in planes through the axis of symmetry is identical.
+
+\textbf{Plane flows}
+
+principal mean-velocity component is in x direction, confied to the x,y plane, evolve slowly in the x direction.
+
+\begin{equation*}
+    U_i=\{U,V,0\}
+\end{equation*}
+
+\begin{equation*}
+    \frac{\p}{\p x}\ll\frac{\p}{\p y}
+\end{equation*}
+
+Wake, jet and shear layer.
+
+\begin{equation*}
+    U_s=max\left|U_0-U\right|
+\end{equation*}
+
+For far wakes, $U=\mathcal{O}(U_0)$;
+
+For jets and shear layers, $U=\mathcal{O}(U_s)$.
+
+Generally, $U=\mathcal{O}(\tilde{U})$, $\tilde{U}=U_0$ for wakes and $\tilde{U}=U_s$ for jets and shear layers.
+
+Cross-stream scale $\ell$,
+
+\begin{equation*}
+    \frac{\p U}{\p y}=\Order\left(\frac{U_s}{\ell}\right)
+\end{equation*}
+
+Length scale in the x direction, $L$
+
+\begin{equation*}
+    \frac{\p U}{\p x}=\Order\left(\frac{U_s}{L}\right)
+\end{equation*}
+
+Velocity scale for turbulence, $\varu$,
+
+\begin{equation*}
+    -\overline{uv}=\overline{u^2}=\overline{v^2}=\Order(\varu^2)
+\end{equation*}
+
+From the equation for continuity, $\p U/\p x+\p V/\p y=0$, the cross-stream component $V$ of the mean velocity,
+
+\begin{equation*}
+    V=\Order\left(\frac{U_s\ell}{L}\right)
+\end{equation*}
+
+\textbf{The cross-stream momentum equation}
+
+\begin{equation*}
+    U\frac{\p V}{\p x}+V\frac{\p V}{\p y}+\frac{\p}{\p x}\left(\overline{uv}\right)+\frac{\p}{\p y}\left(\overline{v^2}\right)=-\frac{1}{\rho}\frac{\p P}{\p y}+\nu\left(\frac{\p^2 V}{\p x^2}+\frac{\p^2 V}{\p y^2}\right)
+\end{equation*}
+
+We assume
+
+\begin{equation*}
+    \frac{\tilde{U}}{\varu}\frac{U_s}{\varu}\left(\frac{\ell}{L}\right)^2\rightarrow0,\quad
+    \frac{U_s}{\varu}\frac{1}{R_\ell}\left(\frac{\ell}{L}\right)\rightarrow0
+\end{equation*}
+
+Identify the orders of magnitudes, the pressure term should be of the same order as $\p\overline{v^2}/\p y$. Thus,
+
+\begin{equation*}
+    \frac{\p \overline{v^2}}{\p y}=-\frac{1}{\rho}\frac{\p P}{\p y}
+\end{equation*}
+
+Integrate,
+
+\begin{equation*}
+    \frac{P}{\rho}+\overline{v^2}=\frac{P_0}{\rho}
+\end{equation*}
+
+$P_0$: the pressure outside the turbulent part of the field $(y\rightarrow\pm\infty)$. We assume $\p P_0/\p x=0$.
+
+Take derivative w.r.t x,
+
+\begin{equation*}
+    \frac{1}{\rho}\frac{\p P}{\p x}+\frac{\p\overline{v^2}}{\p x}=0
+\end{equation*}
+
+\textbf{The streamwise momentum equation}
+
+\begin{equation*}
+    U\frac{\p U}{\p x}+V\frac{\p U}{\p y}+\frac{\p}{\p x}\left(\overline{u^2}-\overline{v^2}\right)+\frac{\p}{\p y}\left(\overline{uv}\right)=\nu\left(\frac{\p^2 U}{\p x^2}+\frac{\p^2 U}{\p y^2}\right)
+\end{equation*}
+
+Similarly, the following relation should keep:
+
+\begin{equation*}
+    \frac{\tilde{U}}{\varu}\frac{U_s}{\varu}\frac{\ell}{L}=\Order(1)
+\end{equation*}
+
+\textbf{Turbulent wakes}
+
+If $\varu/U_s=\Order(1)$, then
+
+\begin{equation*}
+    \frac{\varu}{\tilde{U}}=\Order\left(\frac{\ell}{L}\right)
+\end{equation*}
+
+This situation occurs in far wakes. Thus, we have
+
+\begin{equation*}
+    U\frac{\p U}{\p x}+\frac{\p(\overline{uv})}{\p y}=0
+\end{equation*}
+
+For wakes, we have $\tilde{U}=U_0$, $\varu\sim U_s$,
+
+\begin{equation*}
+    \frac{U-U_0}{U_0}=\Order\left(\frac{U_s}{U_0}\right)=\Order\left(\frac{\ell}{L}\right)
+\end{equation*}
+
+Which imples we can replace $U$ by $U_0$,
+
+\begin{equation*}
+    U_0\frac{\p U}{\p x}+\frac{\p(\overline{uv})}{\p y}=0
+\end{equation*}
+
+
+
+
+
+
+
 
 
 
