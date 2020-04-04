@@ -138,6 +138,258 @@ Which imples we can replace $U$ by $U_0$,
     U_0\frac{\p U}{\p x}+\frac{\p(\overline{uv})}{\p y}=0
 \end{equation*}
 
+\textbf{Turbulent jets and mixing layers}
+
+If $\tilde{U}=U_s$, then
+
+\begin{equation*}
+    \frac{\varu}{U_s}=\Order\left(\frac{\ell}{L}\right)^{1/2}
+\end{equation*}
+
+Hence, the momentum equation
+
+\begin{equation*}
+    U\frac{\p U}{\p x}+V\frac{\p U}{\p y}+\frac{\p(\overline{uv})}{\p y}=0
+\end{equation*}
+
+\textbf{The momentum integral}
+
+$U_0$ is not a function of position,
+
+\begin{equation*}
+    U\frac{\p (U-U_0)}{\p x}+V\frac{\p (U-U_0)}{\p y}+\frac{\p(\overline{uv})}{\p y}=0
+\end{equation*}
+
+Use the continuity equation,
+
+\begin{equation*}
+    U\frac{\p [U(U-U_0)]}{\p x}+V\frac{\p [V(U-U_0)]}{\p y}+\frac{\p(\overline{uv})}{\p y}=0
+\end{equation*}
+
+For large values of $y$, $U-U_0$ and $\overline{uv}$ vanishes,
+
+\begin{equation*}
+    \frac{\dif}{\dx}\int_{-\infty}^{\infty}U(U-U_0)\dy=0
+\end{equation*}
+
+\begin{equation*}
+    \rho\int_{-\infty}^{\infty}U(U-U_0)\dy=M
+\end{equation*}
+
+\textbf{Momentum thickness}
+
+Momentum thickness $\theta$: width of the completely separated stagnant region.
+
+Net momentum defect per unit time and depth
+
+\begin{equation*}
+    -\rho U_0^2\theta=M
+\end{equation*}
+
+\begin{equation*}
+    \theta=\int_{-\infty}^{\infty}\frac{U}{U_0}\left(1-\frac{U}{U_0}\right)\dy
+\end{equation*}
+
+It is independent of $x$.
+
+Drag coefficient $c_d$,
+
+\begin{equation*}
+    D=c_d\frac{1}{2}\rho U_0^2d
+\end{equation*}
+
+$D$ is the drag per unit depth and $d$ is the frontal height of the obstacle.
+
+Clearly, $D=-M$,
+
+\begin{equation*}
+    c_d=2\frac{2\theta}{d}
+\end{equation*}
+
+\subsection{Turbulent wakes}
+
+\textbf{Self-preservation}
+
+In wakes, we expect
+
+\begin{equation*}
+    \frac{U_0-U}{U_s}=f(\frac{y}{\ell},\frac{\ell}{L},\frac{\ell U_s}{\nu},\frac{U_s}{U_0})
+\end{equation*}
+
+Assume $\ell/L\rightarrow0, \ell U_s/\nu\rightarrow\infty, U_s/U_0\rightarrow0$, thus
+
+\begin{equation*}
+    \frac{U_0-U}{U_s}=f\left(\frac{y}{\ell}\right)
+\end{equation*}
+
+The turbulence intensity $\varu$ is of oerder $U_s$,
+
+\begin{equation*}
+    -\overline{uv}=U_s^2g\left(\frac{y}{\ell}\right)
+\end{equation*}
+
+Self-preservation hypothesis: the velocity defect and the Reynolds stress become invariant w.r.t $x$ if they are expressed in terms of the local length and velocity scales $\ell$ and $U_s$.
+
+Define $\xi=y/\ell$,
+
+\begin{align*}
+    \frac{\p U}{\p x}&=-\frac{\dif U_s}{\dx}f+\frac{U_s}{\ell}\frac{\dif l}{\dx}\xi f'\\
+    \frac{\p\overline{uv}}{\p y}&=-\frac{U_s^2}{\ell}g'
+\end{align*}
+
+(primes denote diff w.r.t $\xi$)
+
+Thus we have,
+
+\begin{equation*}
+    -\frac{U_0\ell}{U_s^2}\frac{\dif U_s}{\dx}f+\frac{U_0}{U_s}\frac{\dif l}{\dx}\xi f'=g'
+\end{equation*}
+
+The coefficients of $f$ and $\xi f'$ must be constant, thus
+
+\begin{equation*}
+    \frac{\ell}{U_s^2}\frac{\dif U_s}{\dx}=const,\quad\frac{1}{U_s}\frac{\dif \ell}{\dx}=const
+\end{equation*}
+
+The general solution could be $\ell\sim x^n$, $U_s\sim x^{n-1}$.
+
+The momentum integral can be written as
+
+\begin{equation*}
+    U_0U_s\ell\int_{-\infty}^{\infty}f(\xi)\dif\xi-U_s^2\ell\int_{-\infty}^{\infty}f^2(\xi)\dif\xi=-\frac{M}{\rho}
+\end{equation*}
+
+The second term should be neglected, thus we have
+
+\begin{equation*}
+    U_s\ell\int_{-\infty}^{\infty}f(\xi)\dif\xi=U_0\theta
+\end{equation*}
+
+$U_s\ell$ should be independent of $x$, thus $n=1/2$. Hereby,
+
+\begin{equation*}
+    U_s=Ax^{-1/2},\quad\ell=Bx^{1/2}
+\end{equation*}
+
+A self-preserving solution is possible only if the velocity and length scales behave as the equation above.
+
+\textbf{The mean-velocity profile}
+
+Substitute back into the differential equation,
+
+\begin{equation*}
+    \frac{1}{2}\left(\frac{U_0B}{A}\right)(\xi f'+f)=g'
+\end{equation*}
+
+We need a relation between $f$ and $g$.
+
+Define eddy viscosity $\nu_T$:
+
+\begin{equation*}
+    -\overline{uv}=\nu_T\frac{\p U}{\p y}
+\end{equation*}
+
+then
+
+\begin{equation*}
+    \nu_T=-\frac{U_s\ell g}{f'}
+\end{equation*}
+
+Assume $\nu_T$ is a constant,
+
+\begin{equation*}
+    \frac{\nu_T}{U_s\ell}=\frac{1}{R_T}=-\frac{g}{f'}
+\end{equation*}
+
+$R_T$: Turbulent Reynolds number, determined by experimental data. The equation is likely to be valid only near the center line of the wake.
+
+\begin{equation*}
+    \alpha(\xi f'+f)+f''=0,\quad \alpha=\frac{1}{2}R_TU_0\frac{B}{A}
+\end{equation*}
+
+The solution is
+
+\begin{equation*}
+    f=\exp\left(-\frac{1}{2}\alpha\xi^2\right)
+\end{equation*}
+
+Since $f(0)=1$, the convention is to define $\alpha=1$, so that for $\xi=1, y=\ell$, $f\approx 0.6$.
+
+\begin{equation*}
+    \int_{-\infty}^{\infty}f(\xi)\dif\xi=(2\pi)^{1/2}
+\end{equation*}
+
+Sub back, we have
+
+\begin{align*}
+    \frac{U_s}{U_0}&=1.58\left(\frac{\theta}{x}\right)^{1/2}\\
+    \frac{\ell}{\theta}&=0.252\left(\frac{x}{\theta}\right)^{1/2}
+\end{align*}
+
+This equation is sufficiently accurate.
+
+\textbf{Axisymmetric wakes}
+
+For axisymmetric wakes, $U_s\sim x^{-2/3}$, $\ell\sim x^{1/3}$, thus $R_\ell=U_s\ell/\nu \sim x^{-1/3}$, the structure of the axisymmetric wake is similar from the structure of the plane wake.
+
+When $R_\ell$ is reduced to a value of the order unity, the wake ceases to be turbulent.
+
+\begin{equation*}
+    R_\ell\sim\left(\frac{U_0\theta}{\nu}\right)\left(\frac{\theta}{x}\right)^{1/3}
+\end{equation*}
+
+For moderate Reynolds numbers, $R_\ell$ reaches unity when $x/\theta$ is of order $(U_0\theta/\nu)^3$, which is a large distance.
+
+\textbf{Scale relations}
+
+The Reynolds stress
+
+\begin{equation*}
+    -\overline{uv}=-\frac{U_s^2 f}{R_T}
+\end{equation*}
+
+and its maximum
+
+\begin{equation*}
+    \left(-\frac{\overline{uv}}{U_s^2}\right)_{max}=(R_T^2 e)^{1/2}=0.05
+\end{equation*}
+
+Take the correlation coefficient between $u$ and $v$ as $0.4$, and we can estimate for the rms velocity fluctuation
+
+\begin{equation*}
+    \varu=\left(\frac{0.05U_s^2}{0.4}^{1/2}\right)=0.35U_s
+\end{equation*}
+
+And the wake propagate rate is
+
+\begin{equation*}
+    \frac{\dif\ell}{\dt}=U_0\frac{\dif\ell}{\dx}\approx 0.08 U_s
+\end{equation*}
+
+The ratio of two time scales $t_d/t_p\approx2$, indicates that turbulence can never be in equilibrium because it never has time to adjust to its changing environment.
+
+\textbf{The turbulent energy budget}
+
+The equation for the kinetic energy:
+
+\begin{equation*}
+    0=-U_0\frac{\p}{\p x}\left(\overline{\frac{1}{2}q^2}\right)-\overline{uv}\frac{\p U}{\p y}-\frac{\p}{\p y}\overline{\nu\left(\frac{1}{2}q^2+\frac{p}{\rho}\right)}-\epsilon
+\end{equation*}
+
+Here, $\overline{q^2}=\overline{u_iu_i}$, is twice the kinetic energy per unit mass.
+
+The first term is called advection, which is the convection by the mean flow, \textbf{A}.
+
+The second term is production, \textbf{P}.
+
+The third term is transport by turbulent motion, \textbf{T}.
+
+The last term is dissipation, \textbf{D}.
+
+\textbf{TBD - ???}
+
+\subsection{The wake of a self-propelled body}
+
 
 
 
